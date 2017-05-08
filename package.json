@@ -1,0 +1,16 @@
+{
+  "name": "CorsoITS2017-Backend",
+  "version": "1.0.0",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "mirco",
+  "contributors": [],
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
