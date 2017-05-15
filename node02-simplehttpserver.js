@@ -5,12 +5,14 @@
 var http = require('http');
 const port = 3000
 // create http server
-http.createServer(function (request, response) {
-    console.log("Request received.");
-    // content header
-    response.writeHead(200, {'content-type': 'text/plain'});
-    // write message and signal communication is complete
-    response.end("Hello, World!\n");
+http.createServer(function(request, response) {
+	console.log("Request received.");
+	// content header
+	response.writeHead(200, {
+		'content-type' : 'text/plain'
+	});
+	// write message and signal communication is complete
+	response.end("Hello, World!\n");
 }).listen(8000);
 
 console.log(`Server HTTP avviato sulla porta ${port}.\nApri il browser su http://localhost:${port}`);

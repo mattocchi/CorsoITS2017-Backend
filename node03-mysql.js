@@ -6,15 +6,15 @@ var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'root',
-    database: 'atreeflow_andritz'
+    database: 'mysql'
 });
 
 connection.connect();
 
-connection.query('SELECT * from utenti', function (err, rows, fields) {
+connection.query('SELECT * from user', function (err, rows, fields) {
     if (err) throw err;
     for (var i in rows) {
-        console.log(rows[i].nome)
+        console.log(rows[i].User)
     }
     // console.log('The solution is: ', rows[0]);
 });
